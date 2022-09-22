@@ -1,0 +1,18 @@
+# Inlämningsuppgift moment02a
+import math # this one is helpfull for the number pi
+radie = int(input("Vad är radien av din cirkel? ")) #This is an input which asks for the radie and is inculdes int because the answer is a number
+svar = str(input("Do you want to calculate the area or the circumferense? For area type a and for circumference type o")) #Here it asks if you want the area or the circumference
+
+
+omkrets = (radie * 2) * math.pi #in this line we calculate the circumferense of the circle with the help of math.pi
+x = round(omkrets, 2) # which then here define it as x so we can print it out later in a string
+
+
+area = (radie**2) * math.pi  #here we calculate the area and we use ** which means to the power of  and we get help froom import math and we type math.pi for the number pi in our calculations
+y = round (area, 2) #Here we we define y which is help full when we wanna use y in a whole sentense 
+
+if(svar == 'a'):# here  if the person answers o or a as the question is asked the answers vari and the get diffrent numbers which is either the area or the circumferense
+    print("The omkrets of the cirkle is" ,x,"cm\u00b2" )
+elif (svar == 'o'):
+    print("The area of the cirkle is" ,y,"cm\u00b2" )
+
