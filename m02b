@@ -1,9 +1,9 @@
 #Inlämningsuppgift moment02b
-sec = int(input("How many seconds to conver?"))
+sec = int(input("How many seconds to conver?"))# asks you the number of seconds you want to convert 
 sekonder = sec % (24 * 3600)
 hours = sekonder // 3600
 sekonder %= 3600
 minutes = sekonder // 60
-sekonder %= 60
-print(hours,':', minutes,':', sekonder)
+sekonder %= 60 #From third to seventh line is the matematical part 
+print(hours,':', minutes,':', sekonder)# print the converted times 
 
