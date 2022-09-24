@@ -1,0 +1,167 @@
+#Inlämningsuppgift moment03 Uppgift a
+lön = int(input("Ange din månadslön: "))
+m = lön
+k = m * 0.2136
+l = m * 0.1148
+kv = m - (k+l)
+
+
+print("Månadslön: {:14}kr.".format(m))
+print("kommunalskatt: {:9}kr.".format(k))
+print("Landstingsskatt: {:9}kr.".format(l))
+print("Kvar efter skatt: {:9}kr.".format(kv))
+
+
+#Inlämningsuppgift moment03 Uppgift b
+lön = int(input("Ange din månadslön: "))
+m = lön
+
+if m > 19247:
+    k = m * 0.2136
+    l = m * 0.1148
+    kv = m - (k+l)
+    print("Månadslön: {:14}kr.".format(m))
+    print("kommunalskatt: {:9}kr.".format(k))
+    print("Landstingsskatt: {:9}kr.".format(l))
+    print("Kvar efter skatt: {:9}kr.".format(kv))
+    
+else: 
+    print("Månadslön: {:14}kr.".format(m))
+    print("Kvar: {:9}kr.".format(m))
+    print("Eftersom du tjänar under brytpunkten betalar di ingen skatt.")
+    
+    
+    
+#Inlämningsuppgift moment03 Uppgift c
+lön = int(input("Ange din månadslön: "))
+m = lön
+y= m * 12
+
+
+    
+if y > 675700 : 
+    k = m * 0.2136
+    l = m * 0.1148
+    s = m * 0.2
+    v = m * 0.05
+    kv = m - (k+l+s+v)
+    print("Månadslön: {:14}kr.".format(m))
+    print("kommunalskatt: {:9}kr.".format(k))
+    print("Landstingsskatt: {:9}kr.".format(l))
+    print("statlig skatt: {:9}kr.".format(s))
+    print("värnskatt: {:9}kr.".format(v))
+    print("Kvar efter skatt: {:9}kr.".format(kv))
+
+elif y > 468700 : 
+    k = m * 0.2136
+    l = m * 0.1148
+    s = m * 0.2
+    kv = m - (k+l+s)
+    print("Månadslön: {:14}kr.".format(m))
+    print("kommunalskatt: {:9}kr.".format(k))
+    print("Landstingsskatt: {:9}kr.".format(l))
+    print("statlig skatt: {:9}kr.".format(s))
+    print("Kvar efter skatt: {:9}kr.".format(kv))
+
+elif y > 300000:
+    k = m * 0.2136
+    l = m * 0.1148
+    kv = m - (k+l)
+    print("Månadslön: {:14}kr.".format(m))
+    print("kommunalskatt: {:9}kr.".format(k))
+    print("Landstingsskatt: {:9}kr.".format(l))
+    print("Kvar efter skatt: {:9}kr.".format(kv))
+    
+    
+    
+
+else : 
+    print("Månadslön: {:14}kr.".format(m))
+    print("Kvar: {:9}kr.".format(m))
+    print("Eftersom du tjänar under brytpunkten betalar di ingen skatt.")
+
+#Inlämningsuppgift moment03 Uppgift d
+lön = int(input("Ange din månadslön: "))
+m = lön
+y= m * 12
+
+
+    
+if y > 675700 : 
+    k = m * 0.2136
+    l = m * 0.1148
+    s = m * 0.2
+    v = m * 0.05
+    kv = m - (k+l+s+v)
+    t = k+l+s+v
+    a = (t / m)*100
+    print("Månadslön: {:>14}kr.".format(m))
+    print("kommunalskatt: {:>9}kr.".format(k))
+    print("Landstingsskatt: {:>9}kr.".format(l))
+    print("statlig skatt: {:>9}kr.".format(s))
+    print("värnskatt: {:>9}kr.".format(v))
+    print("Kvar efter skatt: {:9}kr.".format(kv))
+    print("Total skatt: {:9}kr.".format(t))
+    print("Andel betald skatt: {:9}%.".format(a))
+
+elif y > 468700 : 
+    k = m * 0.2136
+    l = m * 0.1148
+    s = m * 0.2
+    kv = m - (k+l+s)
+    t = k+l+s
+    a = (t / m)*100
+    print("Månadslön: {:14}kr.".format(m))
+    print("kommunalskatt: {:9}kr.".format(k))
+    print("Landstingsskatt: {:9}kr.".format(l))
+    print("statlig skatt: {:9}kr.".format(s))
+    print("Kvar efter skatt: {:9}kr.".format(kv))
+    print("Total skatt: {:9}kr.".format(t))
+    print("Andel betald skatt: {:9}%.".format(a))
+
+elif y > 300000:
+    k = m * 0.2136
+    l = m * 0.1148
+    kv = m - (k+l)
+    t = k+l
+    a = (t / m)*100
+    print("Månadslön: {:14}kr.".format(m))
+    print("kommunalskatt: {:9}kr.".format(k))
+    print("Landstingsskatt: {:9}kr.".format(l))
+    print("Kvar efter skatt: {:9}kr.".format(kv))
+    print("Total skatt: {:9}kr.".format(t))
+    print("Andel betald skatt: {:9}%.".format(a))
+    
+    
+    
+
+else : 
+    print("Månadslön: {:14}kr.".format(m))
+    print("Kvar: {:9}kr.".format(m))
+    print("Eftersom du tjänar under brytpunkten betalar di ingen skatt.")
+    
+    
+    
+    
+    
+
+#Inlämningsuppgift moment03 Uppgift e
+lön = (1500, 5000, 10000, 15000, 20000, 25000, 30000, 35000, 40000, 45000, 50000, 55000, 60000)
+m = 0.2136
+l = 0.1148
+s = 0.2
+print("|{0:12s}|{1:12s}|{2:12}|{3:12}kr|{4:12}kr|{5:13}kr|{6:14}|".format("Årsinkomst", "Månadsinkomst" ,"kommunals","landstins","statligs ","Total skatt","Total skatt i %"))
+print("-------------------------------------------------------------------------------------------------------")
+for t in lön: 
+    if t >= 39000 :
+        print("|{0:12}|{1:13}|{2:12}|{3:14}|{4:14}|{5:14}|{6:16}|".format(t*12, t, round(t*m, 2), round(t*l, 2), round(t*s, 2), round((t*m)+(t*l)+(t*s),2), round(((t*m)+(t*l)+(t*s)) / t * 100, 2)));
+    elif t >= 20000 :
+        print("|{0:12}|{1:13}|{2:12}|{3:14}|{4:14}|{5:14}|{6:16}|".format(t*12, t, round(t*m, 2), round(t*l, 2), round(t*0, 2), round((t*m)+(t*l)+(t*s),2), round(((t*m)+(t*l)+(t*0)) / t * 100, 2)));
+    else:
+        print("|{0:12}|{1:13}|{2:12}|{3:14}|{4:14}|{5:14}|{6:16}|".format(t*12, t, round(t*0 ,2), round(t*0, 2), round(t*0, 2), 0, round(((t*0)+(t*0)+(t*0)) / t * 100, 2)));
+        
+        
+        
+        
+        
+        
